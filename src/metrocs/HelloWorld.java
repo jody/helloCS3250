@@ -21,7 +21,7 @@ public class HelloWorld {
    * @param toWhom to whom the greeting is directed
    * @return the constructed greeting.
    */
-  public String sayHello(String toWhom) {
+  public String sayHello(final String toWhom) {
     return "Hello " + toWhom;
   }
 }
