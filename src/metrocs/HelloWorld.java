@@ -1,4 +1,5 @@
 package metrocs;
+import java.time.LocalDate;
 /**
  * Expansion of classic Hello World program
  * to support demonstration of unit testing.
@@ -13,7 +14,8 @@ public class HelloWorld {
    */
   public static void main(final String[] args) {
     HelloWorld hw = new HelloWorld();
-    System.out.println(hw.sayHello("world"));
+    LocalDate now = LocalDate.now();
+    System.out.println(hw.sayHello("world") + "\n" + "Todays Date is:" + now );
   }
 
   /**
@@ -25,3 +27,4 @@ public class HelloWorld {
     return "Hello " + toWhom;
   }
 }
+
