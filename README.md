@@ -17,11 +17,10 @@ The following must also be installed on the local system:
   * Installation information can be found at:
     * https://ant.apache.org/manual/install.html
 
-## Local Setup, Build, and Test
+## Local Setup, Build, Test, Evaluate
 The following commands are appropriate for using a Command Line Interface (CLI).
 
 ### Make a local copy of the project's repository
-
     git clone https://github.com/jody/helloCS3250.git
 Creates a local copy of the project.
     
@@ -32,24 +31,20 @@ Moves into the newly created project directory.
     ant
 Cleans the project directory, compiles the source code, packages the classes into an executable JAR file, and runs the program.
     
-### Run the Program (compiling and packaging only if necessary)
-
+### Run the Program
     ant run
-Runs the program, compiling and packaging only if necessary.
+Runs the program, re-compiling and re-packaging only if necessary.
     
 ### View Project Help Information
-
     ant -p
 Displays project help information.
 
-## Run Unit Tests
-
+### Run Unit Tests
     ant test
 Runs the project's unit tests via [JUnit](https://junit.org).
 An HTML-formatted report will be produced in directory `reports/testresults/`.  Open `index.html` to view the report.
 
-## Run Code Convention Checks
-
+### Run Code Convention Checks
     ant checkstyle
 Runs the project-specified code convention checks via [Checkstyle](https://checkstyle.org).
 An HTML-formatted report will be produced in directory `reports/checkstyle`.  Open `checkstyle_report.html` to view the report.
