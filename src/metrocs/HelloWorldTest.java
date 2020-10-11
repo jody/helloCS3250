@@ -2,7 +2,7 @@ package metrocs;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+//Removed unused import
 
 import org.junit.jupiter.api.Test;
 
@@ -13,22 +13,23 @@ import org.junit.jupiter.api.Test;
  * @version 1.1.0
  */
 public class HelloWorldTest {
+	
+	//Added a global variable to reduce line count.
+	metrocs.HelloWorld hW1 = new metrocs.HelloWorld();
+	
     @Test
     public void sayHelloBasicsTest() {
-        metrocs.HelloWorld hW1 = new metrocs.HelloWorld();
         assertEquals("Hello world", hW1.sayHello("world"));
         assertEquals("Hello earth", hW1.sayHello("earth"));
     }
 
     @Test
     public void sayHelloEmptyStringTest() {
-        metrocs.HelloWorld hW1 = new metrocs.HelloWorld();
         assertEquals("Hello", hW1.sayHello(""));
     }
 
     @Test
     public void sayHelloNullTest() {
-        metrocs.HelloWorld hW1 = new metrocs.HelloWorld();
         assertEquals("Hello!", hW1.sayHello(null));
     }
 
@@ -39,7 +40,6 @@ public class HelloWorldTest {
 
     @Test
     public void groupedAssertionTest() {
-        metrocs.HelloWorld hW1 = new metrocs.HelloWorld();
         assertAll("hello someone",
                   () -> assertEquals("Hello world", hW1.sayHello("world")),
                   () -> assertEquals("Hello", hW1.sayHello("")),
