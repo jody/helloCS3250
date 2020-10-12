@@ -14,6 +14,8 @@ public class HelloWorld {
   public static void main(final String[] args) {
     HelloWorld hw = new HelloWorld();
     System.out.println(hw.sayHello("world"));
+
+    System.out.println(hw.sayHello("from Danny Blake!"));
   }
 
   /**
@@ -23,5 +25,10 @@ public class HelloWorld {
    */
   public String sayHello(final String toWhom) {
     return "Hello " + toWhom;
+  }
+
+// null argument added
+  public String sayHello(){
+    return "Hello!";
   }
 }
