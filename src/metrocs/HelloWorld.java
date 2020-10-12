@@ -20,8 +20,11 @@ public class HelloWorld {
    * Constructs the greeting.
    * @param toWhom to whom the greeting is directed
    * @return the constructed greeting.
+   * if @return is null returns default message
    */
   public String sayHello(final String toWhom) {
-    return "Hello " + toWhom;
+   String defaultMessage = "Hello!"
+   if(toWhom != null) return "Hello " + toWhom;
+   else return defaultMessage;
   }
 }
