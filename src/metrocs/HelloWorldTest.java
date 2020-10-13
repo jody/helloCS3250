@@ -43,6 +43,7 @@ public class HelloWorldTest {
                   () -> assertEquals("Hello world", hW1.sayHello("world")),
                   () -> assertEquals("Hello", hW1.sayHello("")),
                   () -> assertEquals("Hello earth", hW1.sayHello("earth")),
+                  () -> assertEquals("Hello!", hW1.sayHello(null)),
                   () -> assertEquals("Hello United States of America", hW1.sayHello("United States of America")));
                   () -> assertEquals("Hello Untied Kingdom", hW1.sayHello("United Kingdom")));
                   () -> assertEquals("Hello Colorado", hW1.sayHello("Colorado")));
