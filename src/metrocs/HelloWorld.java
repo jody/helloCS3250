@@ -22,6 +22,9 @@ public class HelloWorld {
    * @return the constructed greeting.
    */
   public String sayHello(final String toWhom) {
+    if (toWhom == null) {
+         return "Hello!";
+    }
     return "Hello " + toWhom;
   }
 }
