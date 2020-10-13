@@ -24,6 +24,8 @@ public class HelloWorld {
   public String sayHello(final String toWhom) {
     if (toWhom == null) {
          return "Hello!";
+    } else if (toWhom.equals("")) {
+         return "Hello";
     }
     return "Hello " + toWhom;
   }
