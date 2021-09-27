@@ -31,10 +31,10 @@ public class HelloWorld {
      */
     public String sayHello(final String toWhom) {
         if (toWhom == null) {
-            return String.format("%s!", GREETING);
+            return GREETING + "!";
         } else if (toWhom.equals("")) {
-            return String.format("%s", GREETING);
+            return GREETING;
         }
-        return String.format("%s %s", GREETING, toWhom);
+        return GREETING + " " + toWhom;
     }
 }
