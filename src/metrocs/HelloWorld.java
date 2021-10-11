@@ -26,10 +26,15 @@ public class HelloWorld {
          return "Hello!";
     } else if (toWhom.equals("")) {
          return "Hello";
-    } else if (toWhome == "usa") {
+    } else if (toWhom == "usa") {
       return " USA is the most powerful country in the world";
-    } else if ( len(toWhome) <= 4) {
+    } else if ( len(toWhom) <= 4) {
       return " This is a string with length less than four";
+    } else if ( len(toWhom) <= Integer.MAX_VALUE/4 ) {               
+      try { return " This function can print a string with length a quarter of its maximum size";      
+      }
+      catch { return " String exceeds a quarter of its maximum size";     
+      }
     }
     
     return "Hello " + toWhom;
