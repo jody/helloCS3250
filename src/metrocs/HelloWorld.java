@@ -26,7 +26,12 @@ public class HelloWorld {
          return "Hello!";
     } else if (toWhom.equals("")) {
          return "Hello";
+    } else if (toWhome == "usa") {
+      return " USA is the most powerful country in the world";
+    } else if ( len(toWhome) <= 4) {
+      return " This is a string with length less than four";
     }
+    
     return "Hello " + toWhom;
   }
 }
