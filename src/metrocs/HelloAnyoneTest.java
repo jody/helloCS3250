@@ -1,5 +1,5 @@
 package metrocs;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Tests for class HelloAnyone.
@@ -8,5 +8,9 @@ import org.junit.jupiter.api.Test;
  * @version 1.0
  */
 public class HelloAnyoneTest {
-    //TODO: Write tests for HelloAnyone
+    @Test
+    public void sayHelloBasicsTest() {
+        metrocs.HelloAnyone hA = new metrocs.HelloAnyone();
+        assertEquals("Hello world", hA.sayHello("world"));
+    }
 }
