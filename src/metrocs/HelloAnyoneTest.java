@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * Tests for class HelloAnyone.
  *
- * @author  CS3250 Fall 2021
+ * @author  Nick Williams CS3250 Fall 2021
  * @version 1.0
  */
 public class HelloAnyoneTest {
