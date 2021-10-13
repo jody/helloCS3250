@@ -31,5 +31,5 @@ public class HelloAnyone extends HelloWorld {
       response = "A special hello to " + toWhom;
     }
     return response;
-  }          
+  }
 }
