@@ -13,7 +13,7 @@ public class HelloAnyoneTest {
     public void sayHelloBasicsTest() {
         metrocs.HelloAnyone hA = new metrocs.HelloAnyone();
         assertEquals("Hello world", hA.sayHello("world"));
-        assertEquals("Hello earth", hA.sayHello("earth"));
+        assertEquals("A special hello to earth", hA.sayHello("earth"));
     }
     
     /** null test 
