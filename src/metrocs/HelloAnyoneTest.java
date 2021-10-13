@@ -24,19 +24,19 @@ public class HelloAnyoneTest {
         assertEquals("Hello!", hA.sayHello(null));      
     }
     
-    /** Empty string test
+    /** Empty string test */
     @Test
     public void sayHelloWorldTest() {
          metrocs.HelloAnyone hA = new metrocs.HelloAnyone();
-        assertEquals("Hello World", hA.sayHello("World"));
-    } */
+        assertEquals("Hello World", hA.sayHello("world"));
+    } 
     
-    /** other test
+    /** other test */
     @Test
     public void sayHelloNormalTest() {
          metrocs.HelloAnyone hA = new metrocs.HelloAnyone();
-        assertEquals("A special hello to Robert", hA.sayHello("Robert));
-    } */
+        assertEquals("A special hello to Robert", hA.sayHello("Robert"));
+    } 
     
             
 }
