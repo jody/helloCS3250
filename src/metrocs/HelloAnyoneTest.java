@@ -16,7 +16,7 @@ public class HelloAnyoneTest {
         assertEquals("Hello earth", hA.sayHello("earth"));
     }
     
-    /** null test */
+    /** null test 
     @Test
     public void sayHelloNullTest() {
         metrocs.HelloAnyone hA = new metrocs.HelloAnyone();
@@ -35,7 +35,7 @@ public class HelloAnyoneTest {
     public void sayHelloNormalTest() {
          metrocs.HelloAnyone hA = new metrocs.HelloAnyone();
         assertEquals("A special hello to Robert", hA.sayHello("Robert));
-    }
+    } */
     
             
 }
