@@ -9,4 +9,33 @@ import org.junit.jupiter.api.Test;
  */
 public class HelloAnyoneTest {
     //TODO: Write tests for HelloAnyone
+      @Test
+    public void sayHelloBasicsTest() {
+        metrocs.HelloAnyone hA = new metrocs.HelloAnyone();
+        assertEquals("Hello world", hA.sayHello("world"));
+        assertEquals("Hello earth", hA.sayHello("earth"));
+    }
+    
+    /** null test */
+    @Test
+    public void sayHelloNullTest() {
+        metrocs.HelloAnyone hA = new metrocs.HelloAnyone();
+        assertEquals("Hello!", hA.sayHello(null));      
+    }
+    
+    /** Empty string test*/
+    @Test
+    public void sayHelloEmptyWorldTest() {
+         metrocs.HelloAnyone hA = new metrocs.HelloAnyone();
+        assertEquals("Hello Hello", hA.sayHello("World"));
+    }
+    
+    /** other test*/
+    @Test
+    public void sayHelloNormalTest() {
+         metrocs.HelloAnyone hA = new metrocs.HelloAnyone();
+        assertEquals("A special hello to Robert", hA.sayHello("Robert));
+    }
+    
+            
 }
