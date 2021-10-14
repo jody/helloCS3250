@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Test;
+import java.util.Arrays;
 
 /**
  * Tests for class HelloWorld.
@@ -44,5 +45,27 @@ public class HelloWorldTest {
                   () -> assertEquals("Hello", hW1.sayHello("")),
                   () -> assertEquals("Hello earth", hW1.sayHello("earth")),
                   () -> assertEquals("Hello!", hW1.sayHello(null)));
+    }
+    
+    @Test
+    public void sayHelloUpperCaseTest() {
+    	metrocs.HelloWorld hw1 = new metrocs.HelloWorld();
+    	assertEquals("Hello WORLD", hw1.sayHello("WORLD"));
+    }
+    
+    @Test
+    public void sayHelloSymbolsTest() {
+    	metrocs.HelloWorld hw1 = new metrocs.HelloWorld();
+    	assertEquals("Hello !@#$%^&*", hw1.sayHello("!@#$%^&*"));
+    }
+    
+    @Test 
+    public void sayHelloLargeStringTest() {
+    	metrocs.HelloWorld hw1 = new metrocs.HelloWorld();
+    	int LARGE_LENGTH = (int)(1 * Math.pow(10,7));
+    	char[] chars = new char[LARGE_LENGTH];
+    	Arrays.fill(chars, 'a');
+    	String large = new String(chars);
+    	assertEquals(("Hello " + large), hw1.sayHello(large));
     }
 }
