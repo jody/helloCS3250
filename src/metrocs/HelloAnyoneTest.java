@@ -10,12 +10,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class HelloAnyoneTest {
     //TODO: Write tests for HelloAnyone
-    HelloWorld hello;
+    HelloAnyone hello;
 
     @Test
     void helloWorldTest(){
-    	hello = new HelloWorld();
+    	hello = new HelloAnyone();
     	String expected = "Hello world";
     	assertEquals(expected, hello.sayHello("world"));
+    }
+    
+    @Test
+    void specialHelloTest(){
+    	hello = new HelloAnyone();
+    	String expected = "A special hello to insertName";
+    	assertEquals(expected, hello.sayHello("insertName"));
     }
 }
