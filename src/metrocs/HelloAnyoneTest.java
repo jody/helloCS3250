@@ -18,7 +18,7 @@ public class HelloAnyoneTest {
     }
 
     @Test
-    public void helloEveryoneEmptyString(){
+    public void helloEveryoneEmptyString() {
         metrocs.HelloAnyone ha1 = new metrocs.HelloAnyone();
         assertEquals("Hello world", ha1.sayHello(""));
     }
