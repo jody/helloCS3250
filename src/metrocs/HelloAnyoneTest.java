@@ -1,5 +1,4 @@
 package metrocs;
-import org.junit.jupiter.api.Test;
 
 /**
  * Tests for class HelloAnyone.
