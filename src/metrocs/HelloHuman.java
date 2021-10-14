@@ -48,8 +48,10 @@ public class HelloHuman extends HelloWorld {
         String response = "";
         if (toWhom == null || toWhom.equals("human")) {
             response = super.sayHello("human");
+        } else if (toWhom.equals("") || toWhom.equals(" ")) {
+            response = "ERROR: NO DESIGNATION GIVEN";
         } else {
-            response = "Hello\n" + "HUMAN_DESIGNATION = " + toWhom;
+            response = "Hello\n" + "USER_DESIGNATION = " + toWhom;
         }
         return response;
     }
