@@ -37,9 +37,5 @@ public class HelloWorld {
     }
     return GREETING + " " + toWhom;
   }
-  
-  public String getGreeting() {
-      return GREETING;
-  }
 }
 
