@@ -14,13 +14,18 @@ public class HelloWorld {
   public static final String GREETING = "Hello";
 
   /**
+   * A "toWhom" string variable that can be modified as needed.
+   */
+  public static final String toWhom = "world";
+
+  /**
    * Produces desired string on stdout.
    *
    * @param args ignored
    */
   public static void main(final String[] args) {
     HelloWorld hw = new HelloWorld();
-    System.out.println(hw.sayHello("world"));
+    System.out.println(hw.sayHello(toWhom));
   }
 
   /**
