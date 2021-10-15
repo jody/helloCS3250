@@ -19,8 +19,8 @@ public class HelloWorld {
    * @param args ignored
    */
   public static void main(final String[] args) {
-    HelloWorld hw = new HelloWorld();
-    System.out.println(hw.sayHello("world"));
+    HelloWorld defaultHW = new HelloWorld();
+    System.out.println(defaultHW.sayHello("world"));
   }
 
   /**
