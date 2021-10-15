@@ -11,28 +11,36 @@ import static org.junit.Assert.assertEquals;
  */
 public class HelloAnyoneTest {
     
-    // Tests with null input
+    /**
+     * Tests with null input
+     */ 
     @Test
     public void sayHelloNULL() {
         HelloAnyone ha = new HelloAnyone();
         assertEquals("Hello!", ha.sayHello(null));
     }
 
-    // Test with an empty string
+    /**
+     *  Tests with an empty string 
+     */
     @Test
     public void sayHelloEmpty() {
         HelloAnyone ha = new HelloAnyone();
         assertEquals("A special hello to ", ha.sayHello(""));
     }
 
-    // Test saying hello to "CS3250"
+    /**
+     * Tests saying hello to "CS3250"
+     */
     @Test
     public void sayHelloCS3250() {
         HelloAnyone ha = new HelloAnyone();
         assertEquals("A special hello to CS3250", ha.sayHello("CS3250"));
     }
 
-    // Test saying hello to "world"
+    /** 
+     * Tests saying hello to "world"
+     */
     @Test
     public void sayHelloWorld() {
         HelloAnyone ha = new HelloAnyone();
