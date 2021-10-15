@@ -20,7 +20,8 @@ public class HelloWorld {
    */
   public static void main(final String[] args) {
     HelloWorld hw = new HelloWorld();
-    System.out.println(hw.sayHello("world"));
+    Method mt = new Method();
+    System.out.println(hw.sayHello("world") + mt.name("Nicolas"));
   }
 
   /**
@@ -36,5 +37,11 @@ public class HelloWorld {
       return GREETING;
     }
     return GREETING + " " + toWhom;
+  }
+
+  public static class Method extends HelloWorld{
+    public String name (String Fullname){
+      return Fullname;
+    }
   }
 }
