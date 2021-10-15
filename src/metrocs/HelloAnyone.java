@@ -24,7 +24,7 @@ public class HelloAnyone extends HelloWorld {
    */
   @Override
   public String sayHello(final String toWhom) {
-    String response = "";
+  String response;
     if (toWhom == null || toWhom.equals("world")) {
       response = super.sayHello(toWhom);
     } else {
