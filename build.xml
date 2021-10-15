@@ -109,7 +109,6 @@
 
   <!-- https://junit.org/junit5/docs/current/user-guide/#running-tests-console-launcher -->
   <target name="test.console.launcher" depends="compile">
-    <mkdir dir="${testreports.dir}"/>
     <java classpathref="test.classpath"
           classname="org.junit.platform.console.ConsoleLauncher"
           fork="true"
