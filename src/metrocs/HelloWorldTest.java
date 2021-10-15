@@ -32,11 +32,6 @@ public class HelloWorldTest {
     }
 
     @Test
-    public void unnecessaryTest() {
-        assertNotNull(new metrocs.HelloWorld());
-    }
-
-    @Test
     public void groupedAssertionTest() {
         metrocs.HelloWorld hW1 = new metrocs.HelloWorld();
         assertAll("hello someone",
