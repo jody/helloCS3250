@@ -22,7 +22,6 @@ public class HelloWorld {
     HelloWorld hw = new HelloWorld();
     System.out.println(hw.sayHello("world"));
   }
-
   /**
    * Constructs the greeting.
    *
@@ -38,3 +37,4 @@ public class HelloWorld {
     return GREETING + " " + toWhom;
   }
 }
+
