@@ -6,7 +6,7 @@
   <description>
     Build file for student explorations and discovery learning
   </description>
-  <property name="version" value="20200930_0"/>
+  <property name="version" value="20200930_1"/>
   <property name="author" value="Dr. Jody Paul"/>
   <property name="copyright" value="Copyright (c) 2020 by Dr. Jody Paul"/>
   <property name="license"
@@ -85,7 +85,7 @@
   <property name="checkstyle.reports.dir" value="${reports.dir}/checkstyle"/>
 
   <target name="checkstyle"
-          description="Generate Checkstyle report of code convention violateions">
+          description="Generate Checkstyle report of code convention violations">
     <taskdef resource="com/puppycrawl/tools/checkstyle/ant/checkstyle-ant-task.properties"
              classpath="${checkstyle.jar}" />
     <mkdir dir="${checkstyle.reports.dir}"/>
